@@ -8,10 +8,10 @@ if (-not (Get-Module -Name ExchangeManagementShell -ErrorAction SilentlyContinue
 }
 
 # Set the path to the CSV file containing the list of users
-$CSVPath = "<YOURFILEPATH>"
+$CSVPath = Read-Host "Enter file path of your CSV"
 
 # Set the domain to remove from the email addresses
-$DomainToRemove = "<DOMAINNAME>"
+$DomainToRemove = Read-Host "Enter domain to remove - without @"
 
 # Load the list of users from the CSV file
 $Users = Import-Csv -Path $CSVPath
