@@ -2,6 +2,7 @@
 # Results are saved to a text file in the following location: C:\temp\ExchangeServerInfo.txt.
 # "Get-" cmdlets are used to gather information. See inline comments to identify the information that is being gathered.
 # This script may take a long time to run on larger environments.
+# User assumes risk when running in their production environment. Please check if unsure.
 
 # Basic Exchange Server Info
 $Destination = "C:\temp\ExchangeServerInfo.txt"
