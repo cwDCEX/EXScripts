@@ -2,12 +2,13 @@
 # Results are saved to a text file in the following location: C:\temp\ExchangeServerInfo.txt.
 # "Get-" cmdlets are used to gather information. See inline comments to identify the information that is being gathered.
 # This script may take a long time to run on larger environments.
+# User assumes risk when running in their production environment. Please check if unsure.
 
 # Define the Exchange Server. Replace with FQDN of an Exchange server in your environment
-$ExchangeServer = "exchange.domain.com"
+$ExchangeServer = Read-host "Enter FQDN of an Exchange Server"
 
 # Define the AD Server. Replace with FQDN of an Active Directory server in 
-$ADServer = "adserver.domain.com"
+$ADServer = Read-Host "Enter FQDN of a Domain Controller"
 
 # Define the user credentials
 $UserCredential = Get-Credential
